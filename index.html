@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bus Ticket Booking</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>SwiftBus - Book Your Bus Tickets</header>
+
+  <div class="container">
+
+    <form id="searchForm">
+
+      <div class="form-group">
+
+        <label for="from">From</label>
+
+        <select id="from" required>
+
+          <option value="Chennai">Chennai</option>
+
+          <option value="Bengaluru">Bengaluru</option>
+
+          <option value="Hyderabad">Hyderabad</option>
+
+          <option value="Mumbai">Mumbai</option>
+
+        </select>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="to">To</label>
+
+        <select id="to" required>
+
+          <option value="Bengaluru">Bengaluru</option>
+
+          <option value="Chennai">Chennai</option>
+
+          <option value="Hyderabad">Hyderabad</option>
+
+          <option value="Mumbai">Mumbai</option>
+
+        </select>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="date">Travel Date</label>
+
+        <input type="date" id="date" required>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="passengers">Passengers</label>
+
+        <input type="number" id="passengers" value="1" min="1" max="6">
+
+      </div>
+
+      <button type="submit">Search Buses</button>
+
+    </form>
+
+    <div id="results" class="results"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
